@@ -1,0 +1,446 @@
+/*css reset*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: flex;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*main css*/
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  max-width: 1440px;
+  height: 840px;
+}
+
+.main {
+  display: flex;
+  background: hsla(0, 0%, 100%, 1);
+}
+.logo {
+  width: 77.33px;
+  height: 77.17px;
+  top: 205px;
+  left: 140px;
+  opacity: 10%;
+  box-shadow: 0px 4px 10px 0px hsla(0, 0%, 0%, 0.1);
+}
+
+.card {
+  width: 460px;
+  height: 275px;
+  margin-top: 205px;
+  margin-left: 140px;
+}
+h1 {
+  width: 268px;
+  height: 50px;
+  top: 335px;
+  left: 140px;
+  font-size: 40px;
+  line-height: 50px;
+  font: brown;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.8;
+  color: hsla(174, 100%, 2%, 1);
+}
+span {
+  width: 460px;
+  height: 75px;
+  top: 405px;
+  left: 140px;
+  font: brown;
+  font-size: 16px;
+  line-height: 25px;
+  color: hsla(0, 0%, 45%, 1);
+}
+.lg-view{
+  display:inline-block;
+}
+.sm-view{
+  display:none;
+}
+
+label{
+  width:159px;
+  height:14px;
+  font-weight:600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing:0.1px;
+  color: hsla(208, 96%, 10%, 1);
+  margin-left:-2px;
+   
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 580px;
+  height: 679px;
+  border-radius: 6px;
+  background-color: hsla(0, 0%, 100%, 1);
+  box-shadow: 0px 4px 50px 0px hsla(222, 68%, 4%, 0.1);
+
+  .colunm {
+    display: flex;
+  }
+  .row {
+    display: block;
+    padding: 10px 0 0 0;
+  }
+}
+.form {
+  margin-block-start: 10px;
+  margin-left: 25px;
+  margin-right: 30px;
+  border: 20px;
+
+  .input-box {
+    width: 238px;
+    height: 72px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .input-box1 {
+    width: 490px;
+    height: 72px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .input-box2 {
+    width: 470px;
+    height: 48px;
+    padding: 1px;
+    margin-left: 10px;
+    input {
+      background: hsla(174, 62%, 47%, 1);
+      box-shadow: 0px 10px 40px 0px hsla(0, 0%, 0%, 0.1);
+      font-size: 600;
+      line-height: 16px;
+      letter-spacing:0.2px;
+      align-content:center;
+      color: hsla(0, 0%, 100%, 1);
+    }
+  }
+}
+
+.vector {
+  width: 20.33px;
+  height: 15.33px;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 445px;
+  color: hsla(0, 0%, 65%, 1);
+}
+.calender {
+  width: 24px;
+  height: 24px;
+  margin-top: -35px;
+  margin-left: 190px;
+  padding: 1px, 2px, 1px, 2px;
+  position: absolute;
+}
+
+.row,
+.reg {
+  padding: 40px 10px 0 10px;
+}
+
+input,
+select {
+  width: 100%;
+  height: 100%;
+  color: hsla(0, 0%, 94%, 1);
+  border: 1px solid hsla(0, 0%, 94%, 1);
+}
+
+footer{
+  width: 463px;
+  height:25px;
+  top: 695px;
+  align-content: center;
+  justify-content: center;
+  margin-left: 68px;
+  label{
+    font-weight:500;
+    font-size:14px;
+    line-height: 25px;
+    color:hsla(0, 0%, 0%, 1);
+  }
+  a{
+    font-weight:400;
+    font-size: 14px;
+    line-height:25px;
+    color:hsla(174, 62%, 47%, 1);
+  }
+}
+@media Only screen and (max-width:700px) {
+  body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 375px;
+    height: 1294px;
+    margin-left: 10px;
+  }
+
+  .main{
+    max-width: 375px;
+    height: 1294px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: hsla(0, 0%, 100%, 1);
+
+  }
+  .card {
+    width: 350px;
+    height: -150px;
+    margin-top:0;    
+    margin-left: 40px;
+  }
+
+  .logo {
+    width: 38.67px;
+    height: 40px;
+    top: 74px;
+    margin-left: 24px;
+    opacity: 10%;
+    box-shadow: 0px 4px 10px 0px hsla(0, 0%, 0%, 0.1);
+  }
+ 
+  h1 {
+    width:327px;
+    height: 30px;
+    top: 154px;
+    left: 24px;
+    font-size: 30px;
+    line-height: 29.4px;
+    font: brown;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.8;
+    color: hsla(174, 100%, 2%, 1);
+  }
+  span {
+    width: 327px;
+    height: 50px;
+    top: 196px;
+    left: 24x;
+    font: brown;
+    font-weight:300;
+    font-size: 16px;
+    line-height: 25px;
+    color: hsla(0, 0%, 45%, 1);
+  }
+  .lg-view{
+    display:none;
+  }
+  .sm-view{
+    display:inline-block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 950px;
+    top: 286px;
+    margin-left: 20px;
+    border-radius: 6px;
+    background-color: hsla(0, 0%, 100%, 1);
+    box-shadow: 0px 4px 50px 0px hsla(222, 68%, 4%, 0.1);
+  
+    .colunm {
+      display: flex;
+      flex-direction:column;
+    }
+    .row {
+      display: flex;
+      flex-direction:column;
+    }
+  }
+  
+  label{
+    width:197px;
+    height:14px;
+    font-weight:600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing:0.1px;
+    color: hsla(208, 96%, 10%, 1);
+    margin-left:-2px;
+    
+     
+  }
+  
+  .form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    height: 870px;
+    border-radius: 6px;
+    background-color: hsla(0, 0%, 100%, 1);
+    box-shadow: 0px 4px 50px 0px hsla(222, 68%, 4%, 0.1);
+
+    .input-box {
+      width: 295px;
+      height: 72px;
+      padding: 10px;
+      margin: 10px;
+      .placeholder {
+        font-weight:400;
+        font-size:14px;
+        line-height: 20px;
+        letter-spacing:0.2px;
+        color: hsla(208, 96%, 10%, 1);      
+      }
+    }
+
+  
+    .input-box1 {
+      width: 300px;
+      height: 72px;
+      padding: 10px;
+      margin: 10px;
+    }
+    .input-box2 {
+      width: 300px;
+      height: 48px;
+      padding: 1px;
+      margin-left: 10px;
+      Orientation:-180deg;
+      input {
+        background: hsla(174, 62%, 47%, 1);
+        box-shadow: 0px 10px 40px 0px hsla(0, 0%, 0%, 0.1);
+        font-size: 600;
+        line-height: 16px;
+        letter-spacing:0.2px;
+        align-content:center;
+        color: hsla(0, 0%, 100%, 1);
+      }
+    }
+  }
+  .vector {
+    width: 20.33px;
+    height: 15.33px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 250px;    
+    color: hsla(0, 0%, 65%, 1);
+  }
+  .calender {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 245px;
+    padding: 1px, 2px, 1px, 2px;
+  }
+  
+  .row,
+  .reg {
+    padding: 40px 10px 0 10px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    height: 100%;
+    color: hsla(0, 0%, 94%, 1);
+    border: 1px solid hsla(0, 0%, 94%, 1);
+   
+  }
+  footer{
+    width: 280px;
+    height:50px;
+    margin-left: -325px;
+    margin-top: 880px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+    label{
+      font-weight:500;
+      font-size:14px;
+      line-height: 25px;
+      color:hsla(0, 0%, 0%, 1);
+       
+    }
+    a{
+      font-weight:400;
+      font-size: 14px;
+      line-height:25px;
+      color:hsla(174, 62%, 47%, 1);
+    }
+  }
+} 
+
+
+  
